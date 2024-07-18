@@ -52,7 +52,22 @@
 let userNotes = [];
 
 function notes() {
-  let userInput = prompt("Enter your note");
-  userNotes.push(userInput);
-  return console.log(userNotes);
+  let userInput;
+
+  while (true) {
+    userInput = prompt(
+      "Enter your note and write 'stop' in the stop making notes"
+    );
+
+    if (userInput === null || userInput.toLocaleLowerCase() === "stop") {
+      console.log(userNotes);
+      break;
+    }
+    if (userInput.trim() !== "") {
+      userNotes.push(userInput);
+      console.log(userNotes);
+    } else {
+      console.log("Sahi se Note Likh BC");
+    }
+  }
 }
