@@ -51,7 +51,7 @@
 // Simple Note Making Fuction
 let userNotes = [];
 
-function notes(userInput) {
+function notes() {
   let userInput = prompt("Enter your note");
   userNotes.push(userInput);
   return console.log(userNotes);
