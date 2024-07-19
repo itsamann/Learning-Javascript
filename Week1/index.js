@@ -1,3 +1,36 @@
+// STRING METHODS
+let firstName = "Aman       ";
+let lastName = "Sharma";
+
+// 1. Concatenation
+// let fullName = firstName + " " + lastName;
+// let fullName = firstName.concat(lastName);
+// console.log(fullName);
+
+// 2. Append
+// firstName += " The Best Developer";
+// console.log(firstName);
+
+// 3. Length
+// console.log(firstName.length);
+
+// 4. Cases
+// console.log(firstName.toLocaleLowerCase());
+// console.log(firstName.toLocaleUpperCase());
+
+// 5. Slice
+// console.log(firstName.slice(1, 4)); // Aman => man
+
+// 6. Split & Join Method
+// console.log(firstName.split(""));
+// console.log(firstName.split(" ").join(""));
+
+// 7. Includes
+// console.log(firstName.includes("A"));
+
+// 8. Trim
+console.log(firstName.trim());
+
 // let fname = prompt("What is your First Name?");
 // let lname =  prompt("What is your Last Name?");
 // console.log("Welcome " + fname + " " + lname);
@@ -229,27 +262,28 @@
 
 // sayHi();
 
-let num;
+// Fun Game
+// let num;
 
-do {
-  num = prompt("Choose a number between 1-100");
-} while (isNaN(num) || num < 1 || num > 100);
+// do {
+//   num = prompt("Choose a number between 1-100");
+// } while (isNaN(num) || num < 1 || num > 100);
 
-alert(
-  `We are going to generate random numbers for you between 1 to ${num} and you have to choose a corrent one`
-);
+// alert(
+//   `We are going to generate random numbers for you between 1 to ${num} and you have to choose a corrent one`
+// );
 
-let randomNumber = Math.floor(Math.random() * num) + 1;
-console.log("Random Number: ", randomNumber);
+// let randomNumber = Math.floor(Math.random() * num) + 1;
+// console.log("Random Number: ", randomNumber);
 
-let guess;
-do {
-  guess = prompt(`Choose a Number between 1 to ${num}`);
-  if (guess == randomNumber) {
-    alert(
-      `Congratulations you choice was ${guess} and the correct answer was ${randomNumber}`
-    );
-  } else {
-    alert("try again");
-  }
-} while (guess != randomNumber);
+// let guess;
+// do {
+//   guess = prompt(`Choose a Number between 1 to ${num}`);
+//   if (guess == randomNumber) {
+//     alert(
+//       `Congratulations you choice was ${guess} and the correct answer was ${randomNumber}`
+//     );
+//   } else {
+//     alert("try again");
+//   }
+// } while (guess != randomNumber);
